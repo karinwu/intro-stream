@@ -1,0 +1,44 @@
+[project]
+name = "intro_stream"
+version = "0.1.0"
+description = "A self-intoduction app using streamlit"
+authors = [
+    {name = "karinrga",email = "karin.wu@rgare.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10, <=3.12"
+dependencies = [
+    "streamlit (>=1.45.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 79
+target-version = ["py310"]
+include = '\.pyi?$'
+force-exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.nox
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 79
