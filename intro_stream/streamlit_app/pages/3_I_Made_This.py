@@ -114,7 +114,7 @@ with body:
     st.subheader("Why is it relevant?")
     st.write(
         "Understand how RAG provides a robust knowledge base for LLMs, "
-        "helps second line of defense to validate the model risks,"        
+        "helps second line of defense to validate the model risks,"
         "identify potential biases, and ensure ethical use of AI."
     )
 
@@ -145,4 +145,4 @@ with body:
         "the second line of defnese in evaluating model risks and "
         "validate model performance."
     )
-    st.link_button("Go to Code", "https://github.com/karinrga/mlops")
+    st.link_button("Go to Code", "https://github.com/karinwu/mlops")
