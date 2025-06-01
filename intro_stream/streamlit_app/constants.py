@@ -52,8 +52,13 @@ facts = {
 }
 
 passions = {
-    'cakes': "I love baking and decorating cakes.",
+    'cakes': "I love baking and decorating cakes and cookies.",
     'swimming': "Swimming keeps me active and refreshed.",
     'renewable_energy': "I believe in eletrify everything with clean energy"
-    " to decarbonize the grid and fight climate change."
+    " to decarbonize the grid and fight climate change.",
+    'project': "Contributed to the Elecficiation Impact Study for "
+    "California Utility Commission (CPUC) to determine the distribution grid "
+    "planning and requirements. ",
+    "bess": "Created battery adoption models and battery behavioral simulation"
+    "for Tesla Powerwall.",
 }
