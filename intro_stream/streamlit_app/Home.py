@@ -36,7 +36,6 @@ with body:
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-
     show_real_skills = st.toggle("Show Real Skills", value=False)
 
 
@@ -65,15 +64,3 @@ with body:
             skill_tab(c.info['skills'])
         else:
             skill_tab(c.info['real_skill'])
-
-with st.sidebar:
-    st.success("Select a page above.")
-
-    if show_real_skills:
-        st.header("My REAL skills")
-        for skill in c.info['real_skill']:
-            st.write(f"- {skill}")
-    else:
-        st.header("My skills")
-        for skill in c.info['skills']:
-            st.write(f"- {skill}")
