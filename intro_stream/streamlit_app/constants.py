@@ -54,5 +54,6 @@ facts = {
 passions = {
     'cakes': "I love baking and decorating cakes.",
     'swimming': "Swimming keeps me active and refreshed.",
-    'renewable_energy': "I believe in eletrify everything to decarbonize the grid and fight climate change."
+    'renewable_energy': "I believe in eletrify everything with clean energy"
+    " to decarbonize the grid and fight climate change."
 }
