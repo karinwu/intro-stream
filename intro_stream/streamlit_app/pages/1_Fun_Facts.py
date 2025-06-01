@@ -1,19 +1,34 @@
 import streamlit as st
+import constants as c
 
 st.set_page_config(
     page_title="1. Fun Facts",
     page_icon="🎉",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="collapsed"
 )
 
-st.header("Fun Facts")
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.subheader("👨‍👩‍👧 Family")
-    st.write("I have a wonderful family of four.")
-with col2:
-    st.subheader("🌍 Countries")
-    st.write("I've visited 10+ countries!")
-with col3:
-    st.subheader("🏆 Achievement")
-    st.write("Won a regional baking competition.")
+
+margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
+
+
+with body:
+    c.menu()
+
+    st.header("👨‍👩‍👧 Family", divider='rainbow')
+    col1, col2, col3 = st.columns([1.3, 0.2, 1])
+    with col1:
+        st.markdown(f"###### 👨‍👩‍👧 Family: {c.facts['family']}")    
+
+    with col3:
+        st.image("images/disney.jpeg", width=360)
+
+    st.subheader("🌍 Countries", divider='rainbow')
+    col1, col2, col3 = st.columns([1.3, 0.2, 1])
+    with col1:
+        st.markdown(f"###### 🌍 Countries: {c.facts['countries']}")
+    with col3:
+        # emoji of counties flags such as china, switzerland, UK, Newzealdn, canada, US
+        st.write("Countries:")
+        st.write("Switzerland 🇨🇭")
+
