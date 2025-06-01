@@ -27,8 +27,3 @@ with body:
     col1, col2, col3 = st.columns([1.3, 0.2, 1])
     with col1:
         st.markdown(f"###### 🌍 Countries: {c.facts['countries']}")
-    with col3:
-        # emoji of counties flags such as china, switzerland, UK, Newzealdn, canada, US
-        st.write("Countries:")
-        st.write("Switzerland 🇨🇭")
-
