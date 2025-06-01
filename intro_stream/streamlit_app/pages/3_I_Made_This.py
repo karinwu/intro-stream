@@ -1,68 +1,148 @@
 import streamlit as st
+import constants as c
 
 st.set_page_config(
     page_title="3. I Made This",
     page_icon="🔨",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="collapsed"
 )
 
-st.header("Cakes I've Made")
 
-st.subheader("🍰 Cake")
-col1, col2 = st.columns(2)
+margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
 
-with col1:
-    st.image(
-        "images/cake_1.jpeg",
-        caption="Strawberry Cake",
-        use_container_width=True
+
+with body:
+    c.menu()
+
+    st.header("🍰 Cakes and cookies I've Made")
+
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.image(
+            "images/berry_cake.jpeg",
+            caption="Berry Cake",
+            use_container_width=True
+        )
+        st.image(
+            "images/christmas_cookies.jpeg",
+            caption="Christmas Cookies",
+            use_container_width=True
+        )
+    with col2:
+        st.image(
+            "images/thomas_cake.jpeg",
+            caption="Thomas Cake",
+            use_container_width=True
+        )
+        st.image(
+            "images/cupcakes.jpeg",
+            caption="Cupcakes",
+            use_container_width=True
+        )
+    with col3:
+        st.image(
+            "images/chocolate_cake.jpeg",
+            caption="Chocolate Cake",
+            use_container_width=True
+        )
+        st.image(
+            "images/snowman_cookies.jpeg",
+            caption="Snowman Cookies",
+            use_container_width=True
+        )
+    with col4:
+        st.image(
+            "images/blueberry_cake.jpeg",
+            caption="Blue Berry Cake",
+            use_container_width=True
+        )
+        st.image(
+            "images/trees.jpeg",
+            caption="Christmas Tree",
+            use_container_width=True
+        )
+
+
+    st.header("Models I've Made",  divider='rainbow')
+
+    st.markdown(
+        '<h3 style="color:green;">🧠 Temporal GNN</h3>',
+        unsafe_allow_html=True
     )
-with col2:
-    st.image(
-        "images/cake_2.jpeg",
-        caption="Thomas Cake",
-        use_container_width=True
+    st.subheader("What is it?")
+    st.write(
+        "A Temporal Graph Neural Network (GNN) model for short-term forecasting."
+    )
+    st.subheader("Who is it for?")
+    # st.write("Who is it for?")
+    st.write(
+        "For researchers and developers interested in time-series forecasting "
+        "using graph neural networks."
+    )
+    st.subheader("Why is it relevant?")
+
+    st.write(
+        "Temporal GNNs can capture complex temporal dependencies in data, "
+        "making them suitable for tasks like forecasting pandemic outcome in "
+        "health insurance industry."
+    )
+    st.link_button(
+        "Go to Code",
+        "https://github.com/karinwu/short-term-forecast/blob/main/short_term_forecast/model")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    st.markdown(
+        '<h3 style="color:green;">🤖 LLM</h3>',
+        unsafe_allow_html=True
     )
 
-# List of images and captions
-# images = [
-#     ("images/cake_1.jpeg", "Strawberry Cake"),
-#     ("images/cake_2.jpeg", "Thomas Cake"),
-#     ("images/cake_3.jpeg", "Lemon Cake"),
-#     ("images/cake_4.jpeg", "Chocolate Cake"),
-#     ("images/cake_5.jpeg", "Vanilla Cake"),
-#     ("images/cake_6.jpeg", "Birthday Cake"),
-#     ("images/cake_7.jpeg", "Fruit Tart"),
-#     ("images/cake_8.jpeg", "Berry Cake"),
-#     ("images/cake_9.jpeg", "Cheesecake"),
-#     ("images/cake_10.jpeg", "Rainbow Cake"),
-#     ("images/cake_11.jpeg", "Cupcake"),
-#     ("images/cake_12.jpeg", "Wedding Cake"),
-#     ("images/cake_13.jpeg", "Pineapple Cake"),
-#     ("images/cake_14.jpeg", "Red Velvet"),
-#     ("images/cake_15.jpeg", "Carrot Cake"),
-#     ("images/cake_16.jpeg", "Mini Cake"),
-# ]
+    st.subheader("What is it?")
+    st.write(
+        "A Large Language Model (LLM) demo that provides insights "
+        "into permit data."
+    )
+    st.subheader("Who is it for?")
+    st.write(
+        "For developers and data scientists interested in "
+        "building applications "
+        "that leverage LLMs for data insights and analysis."
+    )
+    st.subheader("Why is it relevant?")
+    st.write(
+        "Understand how RAG provides a robust knowledge base for LLMs, "
+        "helps second line of defense to validate the model risks,"        
+        "identify potential biases, and ensure ethical use of AI."
+    )
 
-# # Display in 4 by 4 grid
-# for i in range(0, len(images), 4):
-#     cols = st.columns(4)
-#     for j in range(4):
-#         if i + j < len(images):
-#             with cols[j]:
-#                 img_path, caption = images[i + j]
-#                 st.image(img_path, caption=caption, use_column_width=True)
+    st.link_button(
+        "Go to Code",
+        "https://github.com/karinwu/llm-permit-insights-pipeline"
+    )
 
-st.header("Models I've Made")
-
-st.subheader("🧠 RNN")
-st.write("A Recurrent Neural Network project for text generation.")
-st.link_button("Go to Code", "https://github.com/karinwu")
-
-st.subheader("🤖 LLM")
-st.write("Built a Large Language Model demo for fun and learning.")
-st.link_button("Go to Code", "https://github.com/karinwu")
-
-st.subheader("📊 MLOps")
-st.write("Experiment tracking with MLflow for my ML projects.")
-st.link_button("Go to Code", "https://github.com/karinwu")
+    st.markdown("<br>", unsafe_allow_html=True)    
+    st.markdown(
+        '<h3 style="color:green;">📊 MLOps</h3>',
+        unsafe_allow_html=True
+    )    
+    st.subheader("What is it?")
+    st.write(
+        "A Machine Learning Operations (MLOps) pipeline "
+        "that automates the model lifecycle."
+    )
+    st.subheader("Who is it for?")
+    st.write(
+        "For data scientists and machine learning engineers looking to "
+        "implement MLOps practices in their projects."
+    )
+    st.subheader("Why is it relevant?")
+    st.write(
+        "MLOps practices help streamline the model lifecycle, "
+        "tracks every artifacts of the model, particularly useful for "
+        "the second line of defnese in evaluating model risks and "
+        "validate model performance."
+    )
+    st.link_button("Go to Code", "https://github.com/karinrga/mlops")
