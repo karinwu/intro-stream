@@ -74,21 +74,20 @@ with body:
     )
     st.subheader("What is it?")
     st.write(
-        "A Temporal Graph Neural Network (GNN) model for short-term forecasting."
+        "A Temporal Graph Neural Network (GNN) model for forecasting."
     )
     st.subheader("Who is it for?")
-    # st.write("Who is it for?")
     st.write(
         "For researchers and developers interested in time-series forecasting "
         "using graph neural networks."
     )
     st.subheader("Why is it relevant?")
-
     st.write(
         "Temporal GNNs can capture complex temporal dependencies in data, "
-        "making them suitable for tasks like forecasting pandemic outcome in "
-        "health insurance industry."
+        "making them well-suited for life insurnace applications, "
+        "particularly particularly for predicting pandemic outcomes."
     )
+
     st.link_button(
         "Go to Code",
         "https://github.com/karinwu/short-term-forecast/blob/main/short_term_forecast/model")
@@ -123,7 +122,7 @@ with body:
         "https://github.com/karinwu/llm-permit-insights-pipeline"
     )
 
-    st.markdown("<br>", unsafe_allow_html=True)    
+    st.markdown("<br>", unsafe_allow_html=True)
     st.markdown(
         '<h3 style="color:green;">📊 MLOps</h3>',
         unsafe_allow_html=True
