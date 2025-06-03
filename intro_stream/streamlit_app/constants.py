@@ -33,8 +33,8 @@ info = {'brief':
         'background': 'Born in Shanghai, lived in 6 different counties',
         'education': 'MSc in Data Science, Georgia Tech',
         'skills': ['Python', 'R', 'SQL', 'PyTorch', 'Docker', 'Kubernetes',
-                   'DBT', 'GCP', 'AWS', 'Git', 'LangGraph', 'fastAPI',
-                   'RAG', 'LLM', 'Pipelines'],
+                   'DBT', 'GCP', 'AWS', 'Git', 'LangGraph', 'Airflow',
+                   'Snowflake', 'RAG', 'LLM' ]
         'real_skill': ['Google everything',
                        'Ask ChatGPT',
                        'Debugging',
@@ -59,6 +59,6 @@ passions = {
     'project': "Contributed to the Elecficiation Impact Study for "
     "California Utility Commission (CPUC) to determine the distribution grid "
     "planning and requirements. ",
-    "bess": "Created battery adoption models and battery behavioral simulation"
+    "bess": "Created battery adoption models and battery behavioral simulation "
     "for Tesla Powerwall.",
 }
