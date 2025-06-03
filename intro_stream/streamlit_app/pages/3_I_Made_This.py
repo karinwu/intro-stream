@@ -74,20 +74,21 @@ with body:
     )
     st.subheader("What is it?")
     st.write(
-        "A Temporal Graph Neural Network (GNN) model for forecasting."
+        "A Temporal Graph Neural Network (GNN) model for short-term forecasting."
     )
     st.subheader("Who is it for?")
+    # st.write("Who is it for?")
     st.write(
         "For researchers and developers interested in time-series forecasting "
         "using graph neural networks."
     )
     st.subheader("Why is it relevant?")
+
     st.write(
         "Temporal GNNs can capture complex temporal dependencies in data, "
-        "making them well-suited for life insurnace applications, "
-        "particularly particularly for predicting pandemic outcomes."
+        "making them suitable for tasks like forecasting pandemic outcome in "
+        "health and life insurance."
     )
-
     st.link_button(
         "Go to Code",
         "https://github.com/karinwu/short-term-forecast/blob/main/short_term_forecast/model")
@@ -122,11 +123,11 @@ with body:
         "https://github.com/karinwu/llm-permit-insights-pipeline"
     )
 
-    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)    
     st.markdown(
         '<h3 style="color:green;">📊 MLOps</h3>',
         unsafe_allow_html=True
-    )    
+    )
     st.subheader("What is it?")
     st.write(
         "A Machine Learning Operations (MLOps) pipeline "
@@ -141,7 +142,8 @@ with body:
     st.write(
         "MLOps practices help streamline the model lifecycle, "
         "tracks every artifacts of the model, particularly useful for "
-        "the second line of defnese in evaluating model risks and "
+        "the second line of defnese in monitoring error metrics, parameters, "
+        "evaluating model risks and "
         "validate model performance."
     )
-    st.link_button("Go to Code", "https://github.com/karinwu/mlops")
+    st.link_button("Go to Code", "https://github.com/karinrga/mlops")
