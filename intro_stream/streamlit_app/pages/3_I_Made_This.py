@@ -146,4 +146,4 @@ with body:
         "evaluating model risks and "
         "validate model performance."
     )
-    st.link_button("Go to Code", "https://github.com/karinrga/mlops")
+    st.link_button("Go to Code", "https://github.com/karinwu/mlops")
