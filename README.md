@@ -16,5 +16,3 @@ poetry config virtualenvs.in-project true
 poetry install
 streamlit run Home.py
 ```
-
-
