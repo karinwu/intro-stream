@@ -30,7 +30,7 @@ info = {'brief':
           Passionate about cakes, risk model, catastrophe model, renewable energy and climate tech.
         """,
         'name': 'Karin Wu',
-        'background': 'Born in Shanghai, lived in 6 different counties',
+        'background': 'Born in Shanghai',
         'education': 'MSc in Data Science, Georgia Tech',
         'skills': ['Python', 'R', 'SQL', 'PyTorch', 'Docker', 'Kubernetes',
                    'DBT', 'GCP', 'AWS', 'Git', 'LangGraph', 'Airflow',
@@ -62,3 +62,37 @@ passions = {
     "bess": "Created battery adoption models and battery behavioral simulation "
     "for Tesla Powerwall.",
 }
+
+
+models = {
+    'GNN': "A Temporal Graph Neural Network (GNN) model for short-term"
+    " forecasting.",
+    'GNN_audience': "For researchers and developers interested in "
+    "time-series forecasting using graph neural networks.",
+    'GNN_relevance': "Temporal GNNs can capture complex temporal "
+    "dependencies in data, making them suitable for tasks like "
+    "forecasting pandemic outcome in health and life insurance.",
+    'GNN_code': "https://github.com/karinwu/short-term-forecast/blob/"
+    "main/short_term_forecast/model",
+
+    'LLM': "A Large Language Model (LLM) demo that provides insights "
+    "into permit data.",
+    'LLM_audience': "For developers and data scientists interested in "
+    "building applications "
+    "that leverage LLMs for data insights and analysis.",
+    'LLM_relevance': "Understand how RAG provides a robust knowledge base for "
+    "LLMs, helps second line of defense to validate the model risks,"
+    "identify potential biases, and ensure ethical use of AI.",
+    'LLM_code': "https://github.com/karinwu/llm-permit-insights-pipeline",
+
+    'MLOps': "A Machine Learning Operations (MLOps) pipeline that "
+    "automates the end-to-end machine learning ",
+    'MLOps_audience': "For data scientists and machine learning engineers "
+    "looking to implement MLOps practices in their projects.",
+    'MLOps_relevance':  "MLOps practices help streamline the model lifecycle, "
+    "tracks every artifacts of the model, particularly useful for "
+    "the second line of defnese in monitoring error metrics, parameters, "
+    "evaluating model risks and "
+    "validate model performance.",
+    'MLOps_code': "https://github.com/karinrwu/mlops"
+    }
