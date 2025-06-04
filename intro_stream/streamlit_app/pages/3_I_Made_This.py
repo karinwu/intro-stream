@@ -65,7 +65,6 @@ with body:
             use_container_width=True
         )
 
-
     st.header("Models I've Made",  divider='rainbow')
 
     st.markdown(
@@ -73,26 +72,15 @@ with body:
         unsafe_allow_html=True
     )
     st.subheader("What is it?")
-    st.write(
-        "A Temporal Graph Neural Network (GNN) model for short-term forecasting."
-    )
+    st.markdown(c.models['GNN'])
     st.subheader("Who is it for?")
-    # st.write("Who is it for?")
-    st.write(
-        "For researchers and developers interested in time-series forecasting "
-        "using graph neural networks."
-    )
+    st.markdown(c.models['GNN_audience'])
     st.subheader("Why is it relevant?")
+    st.markdown(c.models['GNN_relevance'])
 
-    st.write(
-        "Temporal GNNs can capture complex temporal dependencies in data, "
-        "making them suitable for tasks like forecasting pandemic outcome in "
-        "health and life insurance."
-    )
     st.link_button(
         "Go to Code",
-        "https://github.com/karinwu/short-term-forecast/blob/main/short_term_forecast/model")
-
+        c.models['GNN_code'])
     st.markdown("<br>", unsafe_allow_html=True)
 
     st.markdown(
@@ -101,26 +89,16 @@ with body:
     )
 
     st.subheader("What is it?")
-    st.write(
-        "A Large Language Model (LLM) demo that provides insights "
-        "into permit data."
-    )
+    st.markdown(c.models['LLM'])
     st.subheader("Who is it for?")
-    st.write(
-        "For developers and data scientists interested in "
-        "building applications "
-        "that leverage LLMs for data insights and analysis."
-    )
+    st.markdown(c.models['LLM_audience'])
     st.subheader("Why is it relevant?")
-    st.write(
-        "Understand how RAG provides a robust knowledge base for LLMs, "
-        "helps second line of defense to validate the model risks,"
-        "identify potential biases, and ensure ethical use of AI."
-    )
+    st.markdown(
+        c.models['LLM_relevance'])
 
     st.link_button(
         "Go to Code",
-        "https://github.com/karinwu/llm-permit-insights-pipeline"
+        c.models['LLM_code'],
     )
 
     st.markdown("<br>", unsafe_allow_html=True)    
@@ -129,21 +107,14 @@ with body:
         unsafe_allow_html=True
     )
     st.subheader("What is it?")
-    st.write(
-        "A Machine Learning Operations (MLOps) pipeline "
-        "that automates the model lifecycle."
-    )
+    st.markdown(c.models['MLOps'])
     st.subheader("Who is it for?")
-    st.write(
-        "For data scientists and machine learning engineers looking to "
-        "implement MLOps practices in their projects."
-    )
+    st.markdown(c.models['MLOps_audience'])
     st.subheader("Why is it relevant?")
-    st.write(
-        "MLOps practices help streamline the model lifecycle, "
-        "tracks every artifacts of the model, particularly useful for "
-        "the second line of defnese in monitoring error metrics, parameters, "
-        "evaluating model risks and "
-        "validate model performance."
+    st.markdown(
+        c.models['MLOps_relevance'])
+    st.link_button(
+        "Go to Code",
+        c.models['MLOps_code']
     )
-    st.link_button("Go to Code", "https://github.com/karinwu/mlops")
+
