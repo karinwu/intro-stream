@@ -9,7 +9,7 @@ This app includes the following sections:
 * Passion
 * I Made This
 
-## Run it locally
+## 🚀Run it locally
 
 ```
 poetry config virtualenvs.in-project true
